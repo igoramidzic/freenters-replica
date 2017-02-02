@@ -6,7 +6,9 @@ body {
 
 .main-navbar .navbar {
   background-color: transparent;
-  border: 0px; }
+  border: 0px;
+  margin-bottom: 0px;
+  transition: all 1s; }
   .main-navbar .navbar .content {
     padding: 0px 15px;
     margin: 0 auto; }
@@ -21,6 +23,8 @@ body {
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px; }
     .main-navbar .navbar .content ul.navbar-right {
+      margin-top: 20px;
+      margin-bottom: 20px;
       padding: 0px 15px; }
       .main-navbar .navbar .content ul.navbar-right li a {
         padding-top: 10px;

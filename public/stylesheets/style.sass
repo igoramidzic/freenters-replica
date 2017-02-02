@@ -1,0 +1,53 @@
+$primary-color: #51bf87
+
+
+// *
+//   box-sizing: border-box
+
+body
+  height: 3000px
+
+.content
+  max-width: 1170px
+
+// Main navbar
+.main-navbar
+  .navbar
+    background-color: transparent
+    border: 0px
+    .content
+      padding: 0px 15px
+      margin: 0 auto
+      .navbar-brand
+        font-family: 'Roboto', sans-serif
+        background-color: $primary-color
+        color: #fff
+        padding: 15px 30px
+        letter-spacing: 1px
+        font-size: 1.4em
+        font-weight: bold
+        border-bottom-right-radius: 5px
+        border-bottom-left-radius: 5px
+      ul.navbar-right
+        padding: 0px 15px
+        li a
+          padding-top: 10px
+          padding-bottom: 10px
+          color: #4db37e
+        li
+          &:nth-child(5) a
+            padding-top: 10px
+            padding-bottom: 10px
+            color: #fff
+            border: 1px solid #fff
+            border-radius: 5px
+            transition: all .5s
+            &:hover
+              background-color: $primary-color
+              border-color: $primary-color
+
+// Promo section (1)
+.promo-section
+  height: 700px
+  background-image: url('../images/bg-header-2.jpg')
+  background-size: cover

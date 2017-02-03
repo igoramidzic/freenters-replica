@@ -1,49 +1,90 @@
+* {
+  box-sizing: border-box; }
+
 body {
   height: 3000px; }
 
 .content {
   max-width: 1170px; }
 
-.main-navbar .navbar {
-  background-color: transparent;
-  border: 0px;
-  margin-bottom: 0px;
-  transition: all 1s; }
-  .main-navbar .navbar .content {
-    padding: 0px 15px;
-    margin: 0 auto; }
-    .main-navbar .navbar .content .navbar-brand {
-      font-family: "Roboto", sans-serif;
-      background-color: #51bf87;
-      color: #fff;
-      padding: 15px 30px;
-      letter-spacing: 1px;
-      font-size: 1.4em;
-      font-weight: bold;
-      border-bottom-right-radius: 5px;
-      border-bottom-left-radius: 5px; }
-    .main-navbar .navbar .content ul.navbar-right {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding: 0px 15px; }
-      .main-navbar .navbar .content ul.navbar-right li a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color: #4db37e; }
-      .main-navbar .navbar .content ul.navbar-right li:nth-child(5) a {
-        padding-top: 10px;
-        padding-bottom: 10px;
+.main-navbar {
+  transition: all 0.5s; }
+  .main-navbar .navbar {
+    background-color: transparent;
+    border: 0px;
+    margin-bottom: 0px;
+    transition: all 0.5s; }
+    .main-navbar .navbar .content {
+      margin: 0 auto; }
+      .main-navbar .navbar .content .navbar-brand {
+        font-family: "Roboto", sans-serif;
+        background-color: #51bf87;
         color: #fff;
-        border: 1px solid #fff;
-        border-radius: 5px;
-        transition: all 0.5s; }
-        .main-navbar .navbar .content ul.navbar-right li:nth-child(5) a:hover {
-          background-color: #51bf87;
-          border-color: #51bf87; }
+        padding: 15px 30px;
+        letter-spacing: 1px;
+        font-size: 1.4em;
+        font-weight: bold;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px; }
+      .main-navbar .navbar .content ul.navbar-right {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0px 15px; }
+        .main-navbar .navbar .content ul.navbar-right li {
+          margin-left: 10px; }
+          .main-navbar .navbar .content ul.navbar-right li a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: #4db37e; }
+          .main-navbar .navbar .content ul.navbar-right li .loginSignupBTN {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: all 0.5s; }
+            .main-navbar .navbar .content ul.navbar-right li .loginSignupBTN:hover {
+              background-color: #51bf87;
+              border-color: #51bf87; }
+  .main-navbar .navbarScrolled {
+    background-color: #fff; }
+    .main-navbar .navbarScrolled .loginSignupBTN {
+      background-color: #51bf87;
+      border-color: #51bf87; }
 
 .promo-section {
-  height: 700px;
-  background-image: url("../images/bg-header-2.jpg");
-  background-size: cover; }
+  background: url("../images/bg-header-2.jpg") top center no-repeat fixed;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  .promo-section .content {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    padding: 0px; }
+    .promo-section .content .title {
+      margin: 0px 0px 20px 0px;
+      font-size: 3.3em;
+      font-weight: bold;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px black; }
+    .promo-section .content .description {
+      font-size: 1.3em;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px black;
+      margin-bottom: 30px; }
+    .promo-section .content .get-started-btn {
+      background-color: #51bf87;
+      padding: 8px 30px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1.4em;
+      font-weight: bold;
+      transition: all 0.75s;
+      margin-bottom: 30px; }
+      .promo-section .content .get-started-btn:hover {
+        background-color: #e9553b; }
+    .promo-section .content .youtube-link {
+      color: #b4b4b4;
+      font-weight: bold; }
+      .promo-section .content .youtube-link:hover {
+        color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

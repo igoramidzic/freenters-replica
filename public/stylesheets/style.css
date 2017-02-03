@@ -54,7 +54,10 @@ body {
     .main-navbar .navbar .content ul.navbar-right {
       margin-top: 20px;
       margin-bottom: 20px;
-      padding: 0px 15px; }
+      padding: 0px 15px;
+      transition: all 0.5s; }
+      .main-navbar .navbar .content ul.navbar-right .active {
+        color: #51bf87 !important; }
       .main-navbar .navbar .content ul.navbar-right li {
         margin-left: 10px; }
         .main-navbar .navbar .content ul.navbar-right li a {
@@ -78,7 +81,14 @@ body {
     background-color: #51bf87 !important; }
   .main-navbar .navbarScrolled .loginSignupBTN {
     background-color: #51bf87;
-    border-color: #51bf87; }
+    border-color: #51bf87 !important; }
+  .main-navbar .navbarScrolled ul.navbar-right {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important; }
+    .main-navbar .navbarScrolled ul.navbar-right li a {
+      color: #666666 !important; }
+    .main-navbar .navbarScrolled ul.navbar-right .loginSignupBTN {
+      color: #fff !important; }
 
 .promo-section {
   background: url("../images/bg-header-2.jpg") top center no-repeat fixed;
@@ -187,6 +197,6 @@ body {
     .printing-is-expensive-section .content .row .left-col {
       padding: 0 15px 0 15px; }
     .printing-is-expensive-section .content .row .right-col {
-      padding: 50px 120px 0 120px; } }
+      padding: 50px 120px 0px 120px; } }
 
 /*# sourceMappingURL=style.css.map */

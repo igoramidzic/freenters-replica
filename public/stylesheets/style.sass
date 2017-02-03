@@ -64,6 +64,9 @@ body
         margin-top: 20px
         margin-bottom: 20px
         padding: 0px 15px
+        transition: all .5s
+        .active
+          color: $primary-color !important
         li
           margin-left: 10px
           a
@@ -89,7 +92,14 @@ body
           background-color: $primary-color !important
     .loginSignupBTN
       background-color: $primary-color
-      border-color: $primary-color
+      border-color: $primary-color !important
+    ul.navbar-right
+      margin-top: 5px !important
+      margin-bottom: 5px !important
+      li a
+        color: #666666 !important
+      .loginSignupBTN
+        color: #fff !important
 
 
 // Promo section (1)
@@ -212,4 +222,4 @@ body
         .left-col
           padding: 0 15px 0 15px
         .right-col
-          padding: 50px 120px 0 120px
+          padding: 50px 120px 0px 120px

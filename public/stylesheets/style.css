@@ -117,5 +117,27 @@ body {
   .promo-section {
     padding-top: 150px;
     padding-bottom: 50px; } }
+.printing-is-expensive-section {
+  padding: 80px 0px 80px 0px; }
+  .printing-is-expensive-section .content .header {
+    text-align: center; }
+    .printing-is-expensive-section .content .header .title {
+      margin-top: 0px;
+      color: #333; }
+    .printing-is-expensive-section .content .header .description {
+      font-size: 1.3em;
+      color: #999999;
+      margin-bottom: 30px; }
+  .printing-is-expensive-section .content .row {
+    padding: 90px 0px 90px 0px;
+    background-color: orange; }
+    .printing-is-expensive-section .content .row .left-col .title {
+      margin: 0 0 30px 0;
+      color: #4a6781; }
+    .printing-is-expensive-section .content .row .left-col .description {
+      color: #333; }
+    .printing-is-expensive-section .content .row .right-col img {
+      display: block;
+      margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

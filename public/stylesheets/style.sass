@@ -142,20 +142,23 @@ body
     padding-top: 150px
     padding-bottom: 50px
 
+// Info section header
+.info-section-header
+  padding: 80px 0px 0px 0px
+  .header
+    text-align: center
+    .title
+      font-size: 2.5em
+      margin-top: 0px
+      color: $primary-text-color
+    .description
+      font-size: 1.3em
+      color: #999999
+      margin-bottom: 30px
+
 // Printing is Expensive Section
-.printing-is-expensive-section
-  padding: 80px 0px 80px 0px
+.info-section
   .content
-    .header
-      text-align: center
-      .title
-        font-size: 2.5em
-        margin-top: 0px
-        color: $primary-text-color
-      .description
-        font-size: 1.3em
-        color: #999999
-        margin-bottom: 30px
     .row
       padding: 90px 0px 90px 0px
       .left-col
@@ -171,11 +174,12 @@ body
         display: inline-block
         vertical-align: middle
         float: none
+        padding: 0 100px 0 100px
         img
           display: block
           margin: 0 auto
-          -webkit-filter: drop-shadow(5px 5px 5px #222)
-          filter: drop-shadow(0px 0px -5px #222)
+          -webkit-filter: drop-shadow(2px 2px 5px #222)
+          filter: drop-shadow(2px 2px 5px #222)
 
 @media (max-width: 1199px)
   .printing-is-expensive-section

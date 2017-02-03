@@ -183,11 +183,11 @@ body
       .right-col
         display: inline-block
         vertical-align: middle
-        float: none
         padding: 0 100px 0 100px
         img
           display: block
           margin: 0 auto
+        .shadow-please
           -webkit-filter: drop-shadow(2px 2px 5px #222)
           filter: drop-shadow(2px 2px 5px #222)
 
@@ -221,5 +221,16 @@ body
         padding: 30px 0px 30px 0px
         .left-col
           padding: 0 15px 0 15px
-        .right-col
+        .right-col.num1
           padding: 50px 120px 0px 120px
+        .right-col.num2
+          padding: 0px 120px 50px 120px
+@media (max-width: 500px)
+  .printing-is-expensive-section
+    .content
+      .row
+        padding: 30px 0px 30px 0px
+        .right-col.num1
+          padding: 50px 100px 0px 100px
+        .right-col.num2
+          padding: 0px 100px 50px 100px

@@ -1,20 +1,43 @@
+/* BUGS
+
+    1) Navbar toggles navbarScrolled class when collapse button is clicked
+
+*/
+
+var navbarToggle = false;
+
 $(document).ready(function(){
 
   // Functions
 
   // Toggle background-color for navbar when un-collapsed
   $('.navbar-toggle').click(function () {
-    $('.navbar').toggleClass('navbarScrolled');
+    if (!($('.navbar').hasClass('navbarScrolled'))) {
+      $('.navbar').addClass('navbarScrolled');
+    } else {
+      $('.navbar').removeClass('navbarScrolled');
+    }
     $('.navbar-toggle').toggleClass('icon-bar-green');
+
+    if (navbarToggle == false) {
+      navbarToggle = true;
+    } else {
+      navbarToggle = false;
+    }
+    console.log(navbarToggle);
   })
 
   // Change navbar on scroll
   function changeNavbarOnScroll () {
     if ($(window).scrollTop() > 150) {
-      $('.navbar').addClass('navbarScrolled');
+      if (!($('.navbar').hasClass('navbarScrolled'))) {
+        $('.navbar').addClass('navbarScrolled');
+      }
     }
     if ($(window).scrollTop() < 100) {
-      $('.navbar').removeClass('navbarScrolled');
+      if (navbarToggle == false) {
+        $('.navbar').removeClass('navbarScrolled');
+      }
     }
   }
 

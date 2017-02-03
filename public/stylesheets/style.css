@@ -7,6 +7,13 @@ body {
 .content {
   max-width: 1170px; }
 
+.row {
+  display: block; }
+  .row .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none; }
+
 .main-navbar .navbar.navbar-default .navbar-collapse {
   border: 0;
   -webkit-box-shadow: none;
@@ -103,6 +110,7 @@ body {
       .promo-section .content .get-started-btn:hover {
         background-color: #e9553b; }
     .promo-section .content .youtube-link {
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px black;
       color: #b4b4b4;
       font-weight: bold; }
       .promo-section .content .youtube-link:hover {
@@ -125,6 +133,7 @@ body {
   .printing-is-expensive-section .content .header {
     text-align: center; }
     .printing-is-expensive-section .content .header .title {
+      font-size: 2.5em;
       margin-top: 0px;
       color: #333; }
     .printing-is-expensive-section .content .header .description {
@@ -142,9 +151,15 @@ body {
         line-height: 1.5;
         font-size: 1.3em;
         color: #333; }
-    .printing-is-expensive-section .content .row .right-col img {
-      display: block;
-      margin: 0 auto; }
+    .printing-is-expensive-section .content .row .right-col {
+      display: inline-block;
+      vertical-align: middle;
+      float: none; }
+      .printing-is-expensive-section .content .row .right-col img {
+        display: block;
+        margin: 0 auto;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(0px 0px -5px #222); }
 
 @media (max-width: 1199px) {
   .printing-is-expensive-section .content .row {
@@ -161,11 +176,15 @@ body {
     .printing-is-expensive-section .content .row .right-col {
       padding: 0 100px 0 100px; } }
 @media (max-width: 768px) {
+  .printing-is-expensive-section .content .header .title {
+    font-size: 2.2em; }
+  .printing-is-expensive-section .content .header .description {
+    font-size: 1.3em; }
   .printing-is-expensive-section .content .row {
     padding: 30px 0px 30px 0px; }
     .printing-is-expensive-section .content .row .left-col {
       padding: 0 15px 0 15px; }
     .printing-is-expensive-section .content .row .right-col {
-      padding: 0 100px 0 100px; } }
+      padding: 50px 120px 0 120px; } }
 
 /*# sourceMappingURL=style.css.map */

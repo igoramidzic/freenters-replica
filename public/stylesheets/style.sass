@@ -11,6 +11,13 @@ body
 .content
   max-width: 1170px
 
+.row
+  display: block
+  .vcenter
+    display: inline-block
+    vertical-align: middle
+    float: none
+
 // Main navbar
 .main-navbar
   // This removes the border from the bottom of the navbar on open
@@ -116,6 +123,7 @@ body
       &:hover
         background-color: #e9553b
     .youtube-link
+      text-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 1px 25px rgba(0,0,0,1)
       color: #b4b4b4
       font-weight: bold
       &:hover
@@ -141,6 +149,7 @@ body
     .header
       text-align: center
       .title
+        font-size: 2.5em
         margin-top: 0px
         color: $primary-text-color
       .description
@@ -159,9 +168,14 @@ body
           font-size: 1.3em
           color: $primary-text-color
       .right-col
+        display: inline-block
+        vertical-align: middle
+        float: none
         img
           display: block
           margin: 0 auto
+          -webkit-filter: drop-shadow(5px 5px 5px #222)
+          filter: drop-shadow(0px 0px -5px #222)
 
 @media (max-width: 1199px)
   .printing-is-expensive-section
@@ -184,9 +198,14 @@ body
 @media (max-width: 768px)
   .printing-is-expensive-section
     .content
+      .header
+        .title
+          font-size: 2.2em
+        .description
+          font-size: 1.3em
       .row
         padding: 30px 0px 30px 0px
         .left-col
           padding: 0 15px 0 15px
         .right-col
-          padding: 0 100px 0 100px
+          padding: 50px 120px 0 120px

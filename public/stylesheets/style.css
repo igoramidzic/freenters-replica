@@ -67,6 +67,8 @@ body {
 .main-navbar .navbarScrolled {
   background-color: #fff;
   box-shadow: 0px -5px 20px black; }
+  .main-navbar .navbarScrolled .navbar-toggle:hover .icon-bar {
+    background-color: #51bf87 !important; }
   .main-navbar .navbarScrolled .loginSignupBTN {
     background-color: #51bf87;
     border-color: #51bf87; }

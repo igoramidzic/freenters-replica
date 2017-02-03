@@ -5,41 +5,62 @@
 */
 
 var navbarToggle = false;
+var toggleWhiteBackground = false;
 
 $(document).ready(function(){
 
   // Functions
 
+  // Change navbar function
+  function toggleNavbar () {
+    if (navbarToggle) {
+      navbarToggle = false;
+    } else {
+      navbarToggle = true;
+    }
+  }
+
   // Toggle background-color for navbar when un-collapsed
   $('.navbar-toggle').click(function () {
-    if (!($('.navbar').hasClass('navbarScrolled'))) {
+    if (!toggleWhiteBackground) {
       $('.navbar').addClass('navbarScrolled');
-    } else {
-      $('.navbar').removeClass('navbarScrolled');
+      toggleWhiteBackground = true;
+    }
+    if (navbarToggle) {
+      if ($(window).scrollTop() < 100) {
+        $('.navbar').removeClass('navbarScrolled');
+        toggleWhiteBackground = false;
+      }
     }
     $('.navbar-toggle').toggleClass('icon-bar-green');
-
-    if (navbarToggle == false) {
-      navbarToggle = true;
-    } else {
-      navbarToggle = false;
-    }
-    console.log(navbarToggle);
+    toggleNavbar();
   })
 
   // Change navbar on scroll
   function changeNavbarOnScroll () {
     if ($(window).scrollTop() > 150) {
-      if (!($('.navbar').hasClass('navbarScrolled'))) {
-        $('.navbar').addClass('navbarScrolled');
-      }
+      $('.navbar').addClass('navbarScrolled');
+      toggleWhiteBackground = true;
     }
     if ($(window).scrollTop() < 100) {
       if (navbarToggle == false) {
         $('.navbar').removeClass('navbarScrolled');
+        toggleWhiteBackground = false;
       }
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
 
   // Remove br statement from attention-grabber section title
   function toggleBrInTitle () {

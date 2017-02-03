@@ -2,6 +2,12 @@ $(document).ready(function(){
 
   // Functions
 
+  // Toggle background-color for navbar when un-collapsed
+  $('.navbar-toggle').click(function () {
+    $('.navbar').toggleClass('navbarScrolled');
+    $('.navbar-toggle').toggleClass('icon-bar-green');
+  })
+
   // Change navbar on scroll
   function changeNavbarOnScroll () {
     if ($(window).scrollTop() > 150) {

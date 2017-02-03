@@ -7,50 +7,68 @@ body {
 .content {
   max-width: 1170px; }
 
-.main-navbar {
+.main-navbar .navbar.navbar-default .navbar-collapse {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+.main-navbar .navbar {
+  background-color: transparent;
+  border: 0px;
+  margin-bottom: 0px;
   transition: all 0.5s; }
-  .main-navbar .navbar {
-    background-color: transparent;
-    border: 0px;
-    margin-bottom: 0px;
-    transition: all 0.5s; }
-    .main-navbar .navbar .content {
-      margin: 0 auto; }
-      .main-navbar .navbar .content .navbar-brand {
-        font-family: "Roboto", sans-serif;
-        background-color: #51bf87;
-        color: #fff;
-        padding: 15px 30px;
-        letter-spacing: 1px;
-        font-size: 1.4em;
-        font-weight: bold;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px; }
-      .main-navbar .navbar .content ul.navbar-right {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 0px 15px; }
-        .main-navbar .navbar .content ul.navbar-right li {
-          margin-left: 10px; }
-          .main-navbar .navbar .content ul.navbar-right li a {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            color: #4db37e; }
-          .main-navbar .navbar .content ul.navbar-right li .loginSignupBTN {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            color: #fff;
-            border: 1px solid #fff;
-            border-radius: 5px;
-            transition: all 0.5s; }
-            .main-navbar .navbar .content ul.navbar-right li .loginSignupBTN:hover {
-              background-color: #51bf87;
-              border-color: #51bf87; }
-  .main-navbar .navbarScrolled {
-    background-color: #fff; }
-    .main-navbar .navbarScrolled .loginSignupBTN {
+  .main-navbar .navbar .content {
+    margin: 0 auto; }
+    .main-navbar .navbar .content .navbar-toggle {
+      border: none; }
+      .main-navbar .navbar .content .navbar-toggle .icon-bar {
+        width: 22px;
+        height: 3px;
+        background-color: #a7a8a6; }
+      .main-navbar .navbar .content .navbar-toggle:hover {
+        background-color: transparent !important; }
+        .main-navbar .navbar .content .navbar-toggle:hover .icon-bar {
+          background-color: #fff; }
+      .main-navbar .navbar .content .navbar-toggle:focus {
+        background-color: transparent; }
+    .main-navbar .navbar .content .icon-bar-green .icon-bar {
+      background-color: #51bf87; }
+    .main-navbar .navbar .content .icon-bar-green:hover .icon-bar {
+      background-color: #51bf87; }
+    .main-navbar .navbar .content .navbar-brand {
+      font-family: "Roboto", sans-serif;
       background-color: #51bf87;
-      border-color: #51bf87; }
+      color: #fff;
+      padding: 15px 30px;
+      letter-spacing: 1px;
+      font-size: 1.4em;
+      font-weight: bold;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px; }
+    .main-navbar .navbar .content ul.navbar-right {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0px 15px; }
+      .main-navbar .navbar .content ul.navbar-right li {
+        margin-left: 10px; }
+        .main-navbar .navbar .content ul.navbar-right li a {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          color: #4db37e; }
+        .main-navbar .navbar .content ul.navbar-right li .loginSignupBTN {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          color: #fff;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          transition: all 0.5s; }
+          .main-navbar .navbar .content ul.navbar-right li .loginSignupBTN:hover {
+            background-color: #51bf87;
+            border-color: #51bf87; }
+.main-navbar .navbarScrolled {
+  background-color: #fff; }
+  .main-navbar .navbarScrolled .loginSignupBTN {
+    background-color: #51bf87;
+    border-color: #51bf87; }
 
 .promo-section {
   background: url("../images/bg-header-2.jpg") top center no-repeat fixed;
@@ -86,5 +104,18 @@ body {
       font-weight: bold; }
       .promo-section .content .youtube-link:hover {
         color: #fff; }
+
+@media (max-width: 1199px) {
+  .promo-section {
+    padding-top: 150px;
+    padding-bottom: 150px; } }
+@media (max-width: 991px) {
+  .promo-section {
+    padding-top: 150px;
+    padding-bottom: 100px; } }
+@media (max-width: 768px) {
+  .promo-section {
+    padding-top: 150px;
+    padding-bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

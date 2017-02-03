@@ -2,7 +2,8 @@
   box-sizing: border-box; }
 
 body {
-  height: 3000px; }
+  height: 5000px;
+  position: relative; }
 
 .content {
   max-width: 1170px; }
@@ -13,6 +14,25 @@ body {
     display: inline-block;
     vertical-align: middle;
     float: none; }
+
+.scrollUpDiv {
+  transition: all 0.5s;
+  opacity: 0;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+  background-color: #5d80a1;
+  border-radius: 50%; }
+  .scrollUpDiv:hover {
+    background-color: #384d60; }
+  .scrollUpDiv .scrollUpLink {
+    position: relative;
+    top: -10px;
+    right: -7px;
+    color: #fff;
+    font-size: 35px; }
 
 .main-navbar .navbar.navbar-default .navbar-collapse {
   border: 0;

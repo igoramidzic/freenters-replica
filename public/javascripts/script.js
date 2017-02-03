@@ -11,6 +11,17 @@ $(document).ready(function(){
 
   // Functions
 
+  // Scroll Up Element
+  function scrollUpElementCheck() {
+    var heightToToggle = $('.promo-section').outerHeight() - 52;
+    if ($(window).scrollTop() > heightToToggle) {
+      $('.scrollUpDiv').css('opacity', '1');
+    }
+    if ($(window).scrollTop() < heightToToggle) {
+      $('.scrollUpDiv').css('opacity', '0');
+    }
+  }
+
   // Change navbar function
   function toggleNavbar () {
     if (navbarToggle) {
@@ -87,6 +98,7 @@ $(document).ready(function(){
     // Scroll function
     $(window).scroll(function(){
       changeNavbarOnScroll();
+      scrollUpElementCheck()
     });
 
     // Resize function
@@ -97,5 +109,6 @@ $(document).ready(function(){
 
     changeNavbarOnScroll();
     toggleBrInTitle();
+    scrollUpElementCheck()
     changeTextAlign();
 });

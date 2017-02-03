@@ -2,10 +2,37 @@
   box-sizing: border-box; }
 
 body {
-  height: 3000px; }
+  height: 5000px;
+  position: relative; }
 
 .content {
   max-width: 1170px; }
+
+.row {
+  display: block; }
+  .row .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none; }
+
+.scrollUpDiv {
+  transition: all 0.5s;
+  opacity: 0;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+  background-color: #5d80a1;
+  border-radius: 50%; }
+  .scrollUpDiv:hover {
+    background-color: #384d60; }
+  .scrollUpDiv .scrollUpLink {
+    position: relative;
+    top: -10px;
+    right: -7px;
+    color: #fff;
+    font-size: 35px; }
 
 .main-navbar .navbar.navbar-default .navbar-collapse {
   border: 0;
@@ -47,7 +74,10 @@ body {
     .main-navbar .navbar .content ul.navbar-right {
       margin-top: 20px;
       margin-bottom: 20px;
-      padding: 0px 15px; }
+      padding: 0px 15px;
+      transition: all 0.5s; }
+      .main-navbar .navbar .content ul.navbar-right .active {
+        color: #51bf87 !important; }
       .main-navbar .navbar .content ul.navbar-right li {
         margin-left: 10px; }
         .main-navbar .navbar .content ul.navbar-right li a {
@@ -71,7 +101,14 @@ body {
     background-color: #51bf87 !important; }
   .main-navbar .navbarScrolled .loginSignupBTN {
     background-color: #51bf87;
-    border-color: #51bf87; }
+    border-color: #51bf87 !important; }
+  .main-navbar .navbarScrolled ul.navbar-right {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important; }
+    .main-navbar .navbarScrolled ul.navbar-right li a {
+      color: #666666 !important; }
+    .main-navbar .navbarScrolled ul.navbar-right .loginSignupBTN {
+      color: #fff !important; }
 
 .promo-section {
   background: url("../images/bg-header-2.jpg") top center no-repeat fixed;
@@ -103,6 +140,7 @@ body {
       .promo-section .content .get-started-btn:hover {
         background-color: #e9553b; }
     .promo-section .content .youtube-link {
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px black;
       color: #b4b4b4;
       font-weight: bold; }
       .promo-section .content .youtube-link:hover {
@@ -120,31 +158,40 @@ body {
   .promo-section {
     padding-top: 150px;
     padding-bottom: 50px; } }
-.printing-is-expensive-section {
-  padding: 80px 0px 80px 0px; }
-  .printing-is-expensive-section .content .header {
+.info-section-header {
+  padding: 80px 0px 0px 0px; }
+  .info-section-header .header {
     text-align: center; }
-    .printing-is-expensive-section .content .header .title {
+    .info-section-header .header .title {
+      font-size: 2.5em;
       margin-top: 0px;
       color: #333; }
-    .printing-is-expensive-section .content .header .description {
+    .info-section-header .header .description {
       font-size: 1.3em;
       color: #999999;
       margin-bottom: 30px; }
-  .printing-is-expensive-section .content .row {
-    padding: 90px 0px 90px 0px; }
-    .printing-is-expensive-section .content .row .left-col {
-      padding: 0 100px 0 100px; }
-      .printing-is-expensive-section .content .row .left-col .title {
-        margin: 0 0 30px 0;
-        color: #4a6781; }
-      .printing-is-expensive-section .content .row .left-col .description {
-        line-height: 1.5;
-        font-size: 1.3em;
-        color: #333; }
-    .printing-is-expensive-section .content .row .right-col img {
+
+.info-section .content .row {
+  padding: 90px 0px 90px 0px; }
+  .info-section .content .row .left-col {
+    padding: 0 100px 0 100px; }
+    .info-section .content .row .left-col .title {
+      margin: 0 0 30px 0;
+      color: #4a6781; }
+    .info-section .content .row .left-col .description {
+      line-height: 1.5;
+      font-size: 1.3em;
+      color: #333; }
+  .info-section .content .row .right-col {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 100px 0 100px; }
+    .info-section .content .row .right-col img {
       display: block;
       margin: 0 auto; }
+    .info-section .content .row .right-col .shadow-please {
+      -webkit-filter: drop-shadow(2px 2px 5px #222);
+      filter: drop-shadow(2px 2px 5px #222); }
 
 @media (max-width: 1199px) {
   .printing-is-expensive-section .content .row {
@@ -161,11 +208,24 @@ body {
     .printing-is-expensive-section .content .row .right-col {
       padding: 0 100px 0 100px; } }
 @media (max-width: 768px) {
+  .printing-is-expensive-section .content .header .title {
+    font-size: 2.2em; }
+  .printing-is-expensive-section .content .header .description {
+    font-size: 1.3em; }
   .printing-is-expensive-section .content .row {
     padding: 30px 0px 30px 0px; }
     .printing-is-expensive-section .content .row .left-col {
       padding: 0 15px 0 15px; }
-    .printing-is-expensive-section .content .row .right-col {
-      padding: 0 100px 0 100px; } }
+    .printing-is-expensive-section .content .row .right-col.num1 {
+      padding: 50px 120px 0px 120px; }
+    .printing-is-expensive-section .content .row .right-col.num2 {
+      padding: 0px 120px 50px 120px; } }
+@media (max-width: 500px) {
+  .printing-is-expensive-section .content .row {
+    padding: 30px 0px 30px 0px; }
+    .printing-is-expensive-section .content .row .right-col.num1 {
+      padding: 50px 100px 0px 100px; }
+    .printing-is-expensive-section .content .row .right-col.num2 {
+      padding: 0px 100px 50px 100px; } }
 
 /*# sourceMappingURL=style.css.map */

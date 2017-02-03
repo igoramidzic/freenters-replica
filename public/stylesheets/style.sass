@@ -6,10 +6,37 @@ $primary-text-color: #333
   box-sizing: border-box
 
 body
-  height: 3000px
+  height: 5000px
+  position: relative
 
 .content
   max-width: 1170px
+
+.row
+  display: block
+  .vcenter
+    display: inline-block
+    vertical-align: middle
+    float: none
+
+.scrollUpDiv
+  transition: all .5s
+  opacity: 0
+  position: fixed
+  bottom: 5px
+  right: 5px
+  width: 35px
+  height: 35px
+  background-color: #5d80a1
+  border-radius: 50%
+  &:hover
+    background-color: #384d60
+  .scrollUpLink
+    position: relative
+    top: -10px
+    right: -7px
+    color: #fff
+    font-size: 35px
 
 // Main navbar
 .main-navbar
@@ -57,6 +84,9 @@ body
         margin-top: 20px
         margin-bottom: 20px
         padding: 0px 15px
+        transition: all .5s
+        .active
+          color: $primary-color !important
         li
           margin-left: 10px
           a
@@ -82,7 +112,14 @@ body
           background-color: $primary-color !important
     .loginSignupBTN
       background-color: $primary-color
-      border-color: $primary-color
+      border-color: $primary-color !important
+    ul.navbar-right
+      margin-top: 5px !important
+      margin-bottom: 5px !important
+      li a
+        color: #666666 !important
+      .loginSignupBTN
+        color: #fff !important
 
 
 // Promo section (1)
@@ -116,6 +153,7 @@ body
       &:hover
         background-color: #e9553b
     .youtube-link
+      text-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 1px 25px rgba(0,0,0,1)
       color: #b4b4b4
       font-weight: bold
       &:hover
@@ -134,19 +172,23 @@ body
     padding-top: 150px
     padding-bottom: 50px
 
+// Info section header
+.info-section-header
+  padding: 80px 0px 0px 0px
+  .header
+    text-align: center
+    .title
+      font-size: 2.5em
+      margin-top: 0px
+      color: $primary-text-color
+    .description
+      font-size: 1.3em
+      color: #999999
+      margin-bottom: 30px
+
 // Printing is Expensive Section
-.printing-is-expensive-section
-  padding: 80px 0px 80px 0px
+.info-section
   .content
-    .header
-      text-align: center
-      .title
-        margin-top: 0px
-        color: $primary-text-color
-      .description
-        font-size: 1.3em
-        color: #999999
-        margin-bottom: 30px
     .row
       padding: 90px 0px 90px 0px
       .left-col
@@ -159,9 +201,15 @@ body
           font-size: 1.3em
           color: $primary-text-color
       .right-col
+        display: inline-block
+        vertical-align: middle
+        padding: 0 100px 0 100px
         img
           display: block
           margin: 0 auto
+        .shadow-please
+          -webkit-filter: drop-shadow(2px 2px 5px #222)
+          filter: drop-shadow(2px 2px 5px #222)
 
 @media (max-width: 1199px)
   .printing-is-expensive-section
@@ -184,9 +232,25 @@ body
 @media (max-width: 768px)
   .printing-is-expensive-section
     .content
+      .header
+        .title
+          font-size: 2.2em
+        .description
+          font-size: 1.3em
       .row
         padding: 30px 0px 30px 0px
         .left-col
           padding: 0 15px 0 15px
-        .right-col
-          padding: 0 100px 0 100px
+        .right-col.num1
+          padding: 50px 120px 0px 120px
+        .right-col.num2
+          padding: 0px 120px 50px 120px
+@media (max-width: 500px)
+  .printing-is-expensive-section
+    .content
+      .row
+        padding: 30px 0px 30px 0px
+        .right-col.num1
+          padding: 50px 100px 0px 100px
+        .right-col.num2
+          padding: 0px 100px 50px 100px

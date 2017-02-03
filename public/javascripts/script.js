@@ -1,6 +1,6 @@
 /* BUGS
 
-    1) Navbar toggles navbarScrolled class when collapse button is clicked
+    1) FIXED --Navbar toggles navbarScrolled class when collapse button is clicked-- 
 
 */
 

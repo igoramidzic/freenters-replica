@@ -39,7 +39,7 @@
                 <li><a href="/instructions">HOW IT WORKS</a></li>
                 <li><a href="/download">DOWNLOAD</a></li>
                 <li><a href="/faq">FAQ</a></li>
-                <li><a class="loginSignupBTN" href="/">LOGIN/SIGNUP</a></li>
+                <li><a class="loginSignupBTN" id="modal_trigger" href="#modal">LOGIN/SIGNUP</a></li>
               </ul>
             </div>
           </div>
@@ -123,7 +123,7 @@ paying them to print ads and coupons along with their documents.</p>
       </div>
     </section>
 
-    
+
 
 
   <!-- Scroll up Link -->
@@ -132,6 +132,20 @@ paying them to print ads and coupons along with their documents.</p>
     <div class="scrollUpLink"><i class="fa fa-caret-up"></i></div>
   </div>
   </a>
+
+
+
+  <!-- Model -->
+  <div class="container">
+		<h1>Popup Login & Signup with jQuery</h1>
+		<a id="modal_trigger" href="#modal" class="btn">Click here to Login or register</a>
+
+		<div id="modal" class="popupContainer" style="display:none;">
+
+				<section class="popupBody">
+				</section>
+		</div>
+  </div>
 
 
   </body>

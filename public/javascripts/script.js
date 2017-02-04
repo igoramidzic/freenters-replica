@@ -1,6 +1,6 @@
 /* BUGS
 
-    1) Navbar toggles navbarScrolled class when collapse button is clicked
+    1) FIXED --Navbar toggles navbarScrolled class when collapse button is clicked--
 
 */
 
@@ -9,12 +9,11 @@ var toggleWhiteBackground = false;
 
 $(document).ready(function(){
 
-  // Smooth Scroll
-  $(function() {
+  // Smooth scrolling in-page link
   $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
@@ -23,7 +22,6 @@ $(document).ready(function(){
       }
     }
   });
-});
 
   // Functions
 
@@ -76,17 +74,6 @@ $(document).ready(function(){
       }
     }
   }
-
-
-
-
-
-
-
-
-
-
-
 
 
   // Remove br statement from attention-grabber section title

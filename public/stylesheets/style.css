@@ -2,7 +2,6 @@
   box-sizing: border-box; }
 
 body {
-  height: 5000px;
   position: relative; }
 
 .content {
@@ -95,20 +94,36 @@ body {
           .main-navbar .navbar .content ul.navbar-right li .loginSignupBTN:hover {
             background-color: #51bf87;
             border-color: #51bf87; }
-.main-navbar .navbarScrolled {
-  background-color: #fff;
-  box-shadow: 0px -5px 20px black; }
-  .main-navbar .navbarScrolled .navbar-toggle:hover .icon-bar {
+.main-navbar .navbarScrolled.navbar {
+  background-color: #fff !important;
+  box-shadow: 0px -5px 20px black !important; }
+  .main-navbar .navbarScrolled.navbar .navbar-toggle:hover .icon-bar {
     background-color: #51bf87 !important; }
-  .main-navbar .navbarScrolled .loginSignupBTN {
-    background-color: #51bf87;
+  .main-navbar .navbarScrolled.navbar .loginSignupBTN {
+    background-color: #51bf87 !important;
     border-color: #51bf87 !important; }
-  .main-navbar .navbarScrolled ul.navbar-right {
+  .main-navbar .navbarScrolled.navbar ul.navbar-right {
     margin-top: 5px !important;
     margin-bottom: 5px !important; }
-    .main-navbar .navbarScrolled ul.navbar-right li a {
+    .main-navbar .navbarScrolled.navbar ul.navbar-right li a {
       color: #666666 !important; }
-    .main-navbar .navbarScrolled ul.navbar-right .loginSignupBTN {
+    .main-navbar .navbarScrolled.navbar ul.navbar-right .loginSignupBTN {
+      color: #fff !important; }
+
+.navbarScrolled .navbar {
+  background-color: #fff !important;
+  box-shadow: 0px -5px 20px black !important; }
+  .navbarScrolled .navbar .navbar-toggle:hover .icon-bar {
+    background-color: #51bf87 !important; }
+  .navbarScrolled .navbar .loginSignupBTN {
+    background-color: #51bf87 !important;
+    border-color: #51bf87 !important; }
+  .navbarScrolled .navbar ul.navbar-right {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important; }
+    .navbarScrolled .navbar ul.navbar-right li a {
+      color: #666666 !important; }
+    .navbarScrolled .navbar ul.navbar-right .loginSignupBTN {
       color: #fff !important; }
 
 .promo-section {
@@ -228,5 +243,57 @@ body {
       padding: 50px 100px 0px 100px; }
     .printing-is-expensive-section .content .row .right-col.num2 {
       padding: 0px 100px 50px 100px; } }
+footer.main-footer {
+  background-color: #1b1d20; }
+  footer.main-footer .content {
+    padding: 25px 0px 50px 0px; }
+    footer.main-footer .content ul.social-footer-links {
+      padding: 0px;
+      text-align: center;
+      margin-bottom: 2.25em; }
+      footer.main-footer .content ul.social-footer-links li {
+        display: inline-block;
+        padding: 0 0.25em 0 0.25em; }
+        footer.main-footer .content ul.social-footer-links li a {
+          transition: all 0.5s;
+          color: #51bf87;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          vertical-align: middle;
+          display: block;
+          font-size: 16px;
+          border-radius: 50%; }
+          footer.main-footer .content ul.social-footer-links li a:hover {
+            color: #fff;
+            background-color: #51bf87; }
+    footer.main-footer .content ul.legal-footer-links {
+      list-style-type: none;
+      text-align: center;
+      padding: 0px; }
+      footer.main-footer .content ul.legal-footer-links .slide-top {
+        position: relative;
+        padding-top: 0.75em;
+        color: #fff;
+        font-size: 1em;
+        line-height: 2; }
+      footer.main-footer .content ul.legal-footer-links small:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 2px;
+        width: 50%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        background: #51bf87; }
+      footer.main-footer .content ul.legal-footer-links .footer-terms {
+        transition: all 0.5s;
+        color: white;
+        font-size: 0.9em;
+        line-height: 2; }
+        footer.main-footer .content ul.legal-footer-links .footer-terms:hover {
+          color: #51bf87;
+          text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

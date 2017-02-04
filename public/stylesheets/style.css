@@ -94,20 +94,36 @@ body {
           .main-navbar .navbar .content ul.navbar-right li .loginSignupBTN:hover {
             background-color: #51bf87;
             border-color: #51bf87; }
-.main-navbar .navbarScrolled {
-  background-color: #fff;
-  box-shadow: 0px -5px 20px black; }
-  .main-navbar .navbarScrolled .navbar-toggle:hover .icon-bar {
+.main-navbar .navbarScrolled.navbar {
+  background-color: #fff !important;
+  box-shadow: 0px -5px 20px black !important; }
+  .main-navbar .navbarScrolled.navbar .navbar-toggle:hover .icon-bar {
     background-color: #51bf87 !important; }
-  .main-navbar .navbarScrolled .loginSignupBTN {
-    background-color: #51bf87;
+  .main-navbar .navbarScrolled.navbar .loginSignupBTN {
+    background-color: #51bf87 !important;
     border-color: #51bf87 !important; }
-  .main-navbar .navbarScrolled ul.navbar-right {
+  .main-navbar .navbarScrolled.navbar ul.navbar-right {
     margin-top: 5px !important;
     margin-bottom: 5px !important; }
-    .main-navbar .navbarScrolled ul.navbar-right li a {
+    .main-navbar .navbarScrolled.navbar ul.navbar-right li a {
       color: #666666 !important; }
-    .main-navbar .navbarScrolled ul.navbar-right .loginSignupBTN {
+    .main-navbar .navbarScrolled.navbar ul.navbar-right .loginSignupBTN {
+      color: #fff !important; }
+
+.navbarScrolled .navbar {
+  background-color: #fff !important;
+  box-shadow: 0px -5px 20px black !important; }
+  .navbarScrolled .navbar .navbar-toggle:hover .icon-bar {
+    background-color: #51bf87 !important; }
+  .navbarScrolled .navbar .loginSignupBTN {
+    background-color: #51bf87 !important;
+    border-color: #51bf87 !important; }
+  .navbarScrolled .navbar ul.navbar-right {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important; }
+    .navbarScrolled .navbar ul.navbar-right li a {
+      color: #666666 !important; }
+    .navbarScrolled .navbar ul.navbar-right .loginSignupBTN {
       color: #fff !important; }
 
 .promo-section {

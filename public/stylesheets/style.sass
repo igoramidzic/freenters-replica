@@ -103,15 +103,34 @@ body
             &:hover
               background-color: $primary-color
               border-color: $primary-color
-  .navbarScrolled
-    background-color: #fff
-    box-shadow: 0px -5px 20px black
+  .navbarScrolled.navbar
+    background-color: #fff !important
+    box-shadow: 0px -5px 20px black !important
     .navbar-toggle
       &:hover
         .icon-bar
           background-color: $primary-color !important
     .loginSignupBTN
-      background-color: $primary-color
+      background-color: $primary-color !important
+      border-color: $primary-color !important
+    ul.navbar-right
+      margin-top: 5px !important
+      margin-bottom: 5px !important
+      li a
+        color: #666666 !important
+      .loginSignupBTN
+        color: #fff !important
+
+.navbarScrolled
+  .navbar
+    background-color: #fff !important
+    box-shadow: 0px -5px 20px black !important
+    .navbar-toggle
+      &:hover
+        .icon-bar
+          background-color: $primary-color !important
+    .loginSignupBTN
+      background-color: $primary-color !important
       border-color: $primary-color !important
     ul.navbar-right
       margin-top: 5px !important

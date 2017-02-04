@@ -1,5 +1,5 @@
 <!-- - - - - - - - - - - - - Main Navbar - - - - - - - - - - - - - - - - -->
-<div class="main-navbar">
+<div class="main-navbar {{navbarScrollToggle}}">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="content">
       <div class="container-fluid">
@@ -18,10 +18,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <!-- Float right navbar links -->
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="{{active}}" href="/">HOME</a></li>
-            <li><a href="/instructions">HOW IT WORKS</a></li>
-            <li><a href="/download">DOWNLOAD</a></li>
-            <li><a href="/faq">FAQ</a></li>
+            <li><a class="{{activeHome}}" href="/">HOME</a></li>
+            <li><a class="{{activeInstructions}}" href="/instructions">HOW IT WORKS</a></li>
+            <li><a class="{{activeDownload}}" href="/download">DOWNLOAD</a></li>
+            <li><a class="{{activeFaq}}" href="/faq">FAQ</a></li>
             <li><a class="loginSignupBTN" href="/">LOGIN/SIGNUP</a></li>
           </ul>
         </div>

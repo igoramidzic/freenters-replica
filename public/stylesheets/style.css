@@ -17,6 +17,7 @@ body {
 
 .scrollUpDiv {
   transition: all 0.5s;
+  cursor: pointer;
   opacity: 0;
   position: fixed;
   bottom: 5px;

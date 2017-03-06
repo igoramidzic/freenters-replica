@@ -10,31 +10,31 @@ var toggleWhiteBackground = false;
 $(document).ready(function(){
 
   // Smooth scrolling in-page link
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
+  // $('a[href*="#"]:not([href="#"])').click(function() {
+  //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+  //     if (target.length) {
+  //       $('html, body').animate({
+  //         scrollTop: target.offset().top
+  //       }, 1000);
+  //       return false;
+  //     }
+  //   }
+  // });
 
   // Functions
 
   // Scroll Up Element
-  function scrollUpElementCheck() {
-    var heightToToggle = $('.promo-section').outerHeight() - 52;
-    if ($(window).scrollTop() > heightToToggle) {
-      $('.scrollUpDiv').css('opacity', '1');
-    }
-    if ($(window).scrollTop() < heightToToggle) {
-      $('.scrollUpDiv').css('opacity', '0');
-    }
-  }
+  // function scrollUpElementCheck() {
+  //   var heightToToggle = $('.promo-section').outerHeight() - 52;
+  //   if ($(window).scrollTop() > heightToToggle) {
+  //     $('.scrollUpDiv').css('opacity', '1');
+  //   }
+  //   if ($(window).scrollTop() < heightToToggle) {
+  //     $('.scrollUpDiv').css('opacity', '0');
+  //   }
+  // }
 
   // Change navbar function
   function toggleNavbar () {
@@ -101,7 +101,7 @@ $(document).ready(function(){
     // Scroll function
     $(window).scroll(function(){
       changeNavbarOnScroll();
-      scrollUpElementCheck()
+      // scrollUpElementCheck()
     });
 
     // Resize function
@@ -112,6 +112,6 @@ $(document).ready(function(){
 
     changeNavbarOnScroll();
     toggleBrInTitle();
-    scrollUpElementCheck()
+    // scrollUpElementCheck()
     changeTextAlign();
 });
